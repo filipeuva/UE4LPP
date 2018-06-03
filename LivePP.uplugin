@@ -1,0 +1,21 @@
+{
+    "FileVersion" : 3,
+    "FriendlyName" : "Live++ Support",
+    "Version" : 0,
+    "VersionName": "0.0",
+    "Description" : "Utils Classes for Phenicks Projects",
+    "Category" : "Programming",
+    "CreatedBy" : "Filipe Uva",
+    "CreatedByURL" : "http://filipeuva.com",
+    "CanContainContent" : false,
+    "EnabledByDefault" : true,
+    "IsBetaVersion" : false,
+    "Modules" :
+    [
+      {
+        "Name": "LivePP",
+        "Type": "Developer",
+        "LoadingPhase": "PostEngineInit"
+      } 
+    ]
+}

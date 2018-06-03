@@ -1,0 +1,6 @@
+Binaries/
+Intermediate/
+*.exe
+API/
+x64/
+x86/
