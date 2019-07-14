@@ -4,7 +4,7 @@
 #include "CoreDelegates.h"
 
 #include "LivePP_PCH.h"
-#include "../API/LPP_API.h"
+#include "../LivePP/API/LPP_API.h"
 #include "AllowWindowsPlatformTypes.h"
 #include "HideWindowsPlatformTypes.h"
 
@@ -19,9 +19,9 @@ void FLivePPModule::StartupModule()
     FString baseDir    = IPluginManager::Get().FindPlugin("LivePP").IsValid() ? IPluginManager::Get().FindPlugin("LivePP")->GetBaseDir() : "";
     FString lppDllPath = FPaths::Combine(*baseDir, 
 #ifdef PLATFORM_64BITS
-        TEXT("x64/LPP_x64.dll")
+        TEXT("LivePP/x64/LPP_x64.dll")
 #else
-        TEXT("x86/LPP_x86.dll")
+        TEXT("LivePP/x86/LPP_x86.dll")
 #endif
     );
 
