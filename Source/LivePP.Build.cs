@@ -8,8 +8,8 @@ public class LivePP : ModuleRules
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		bEnforceIWYU = true;
 
-        PrivateIncludePaths.AddRange(new string[] { "Private", "../API" });
-        PublicIncludePaths.AddRange(new string[] { "Public", "../API" });
+        PrivateIncludePaths.AddRange(new string[] { "Private", "../LivePP/API" });
+        PublicIncludePaths.AddRange(new string[] { "Public", "../LivePP/API" });
  
         PublicDependencyModuleNames.AddRange(
 			new string[] {

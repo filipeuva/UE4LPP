@@ -4,7 +4,7 @@
 #include "CoreDelegates.h"
 
 #include "LivePP_PCH.h"
-#include "../LivePP/API/LPP_API.h"
+#include "LPP_API.h" 
 #include "AllowWindowsPlatformTypes.h"
 #include "HideWindowsPlatformTypes.h"
 
@@ -40,6 +40,7 @@ void FLivePPModule::StartupModule()
         return;
     }
 
+    lpp::lppStartup(static_cast<HMODULE>(lppHModule));
     lpp::lppRegisterProcessGroup(static_cast<HMODULE>(lppHModule), "QuickStart");
 
     //Register all game modules
